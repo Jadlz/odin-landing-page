@@ -13,6 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    /* some sans serif font family */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header,
@@ -26,11 +28,13 @@ body {
 .navbar,
 .hero {
     display: flex;
+    /* absolute (unresponsive) values for width so navbar and hero sections align */
     width: 800px;
 }
 .navbar {
     align-items: center;
     justify-content: space-between;
+    margin-top: 16px;
     
 }
 
@@ -42,8 +46,8 @@ body {
 ul {
     display: flex;
     list-style: none;
+    /* remove default ul margin values */
     margin: 0;
-    padding: 0;
     gap: 16px
 }
 
