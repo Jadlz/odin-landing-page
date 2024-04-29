@@ -138,3 +138,24 @@ button {
     padding: 40%;
 }
 
+.quotes {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.quotes-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+}
+.quotes p {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quotes strong {
+    align-self: flex-end;
+}
