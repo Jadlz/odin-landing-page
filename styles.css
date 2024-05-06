@@ -211,5 +211,11 @@ button {
 .cta-right button {
     outline: 2px solid #F9FAF8;
     border-radius: 4px;
-    width: 195%;
+    width: 210%;
+    margin: 0%;
+}
+
+.footer span {
+    color: #E5E7EB;
+    margin: 1% 0;
 }
