@@ -28,7 +28,6 @@ body {
 .navbar,
 .hero {
     display: flex;
-    /* absolute-ish (unresponsive) values for width so navbar and hero sections align */
     width: 65%;
 }
 .navbar {
@@ -46,8 +45,7 @@ body {
 ul {
     display: flex;
     list-style: none;
-    /* remove default ul margin values */
-    margin: 0;
+    margin: 0; /* remove default ul margin values */
     gap: 16px
 }
 
@@ -62,7 +60,7 @@ a {
 }
 
 .hero {
-    margin: 3%;
+    margin: 6% 3%;
     gap: 10%;
 }
 
@@ -126,6 +124,7 @@ button {
 
 .information-subsection {
     gap: 1%;
+    margin-bottom: 9%;
 }
 
 .information-subsection p {
@@ -149,6 +148,7 @@ button {
     flex-direction: column;
     width: 45%;
     align-items: center;
+    margin: 3% 0;
 }
 .quotes p {
     font-size: 36px;
@@ -158,4 +158,58 @@ button {
 
 .quotes strong {
     align-self: flex-end;
+}
+
+.cta,
+.cta-banner,
+.cta-left,
+.cta-right {
+    display: flex;
+}
+
+.cta,
+.cta-banner,
+.cta-right {
+    justify-content: center;
+    align-items: center;
+}
+
+/* I have no idea why this div is not filling the page width without explicitly setting it to 100% */
+.cta {
+    width: 100%;
+}
+
+.cta-banner {
+    background-color: #3882F6;
+    border-radius: 4px;
+    margin: 6% 0;
+    width: 65%;
+}
+
+.cta-left,
+.cta-right {
+    flex-direction: column;
+    margin: 3% 12%;
+}
+
+.cta-left h3,
+.cta-left p {
+    margin: 0;
+}
+
+.cta-left h3,
+.cta-left p {
+    color: #F9FAF8;
+}
+
+.cta-left p {
+    display: inline-block;
+    overflow: auto; /* or scroll, hidden, etc */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.cta-right button {
+    outline: 2px solid #F9FAF8;
+    border-radius: 4px;
+    width: 195%;
 }
