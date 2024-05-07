@@ -189,7 +189,9 @@ button {
 .cta-left,
 .cta-right {
     flex-direction: column;
-    margin: 3% 12%;
+    flex: 1 1 0; 
+    margin: 3% 12%; 
+    overflow: hidden; 
 }
 
 .cta-left h3,
@@ -204,15 +206,15 @@ button {
 
 .cta-left p {
     display: inline-block;
-    overflow: auto; /* or scroll, hidden, etc */
-    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; 
+    white-space: nowrap; 
 }
 
 .cta-right button {
-    outline: 2px solid #F9FAF8;
-    border-radius: 4px;
-    width: 210%;
-    margin: 0%;
+    border: 2px solid #F9FAF8;
+    max-width: 100%; /* Ensure button doesn't overflow parent */
+    width: 100%; /* Responsive width */
+    margin: 0%; /* Adjust margin as needed */
 }
 
 .footer span {
